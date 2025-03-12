@@ -1,0 +1,39 @@
+.topicos {
+    height: 295px;
+}
+
+.topicos_texto {
+    margin: 1.5rem 0;
+    font-weight: 300;
+}
+
+.topicos_lista {
+    text-decoration: none;
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.topicos_item {
+    margin-bottom: 30px;
+}
+
+.topicos_botao {
+    color: var(--cor-texto);
+    text-decoration: none;
+    font-size: .87rem;
+    padding: 1rem 1.5rem;
+    background-color: var(--cor-amarelo);
+}
+
+@media screen and (min-width: 1024px) {
+    .topicos {
+        padding: 4rem 25%;
+    }
+
+    .topicos_botao {
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,68 @@
+.cadastro {
+    background-color: var(--cor-texto);
+    padding: 1.5rem;
+}
+
+.cadastro_texto {
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.cadastro_titulo {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.cadastro_subtitulo {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+
+.barra_cadastro {
+    background-color: transparent;
+    border-radius: 24px;
+    border: 1px solid var(--cor-azul);
+    width: 350px;
+    height: 2.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+    padding-left: 2rem;
+    color: var(--cor-azul);
+}
+
+.barra_cadastro::placeholder {
+    color: var(--cor-azul);
+
+    padding: 0 2.3rem;
+    background: url(../imagens/Vector.svg) no-repeat;
+}
+
+@media screen and (min-width: 1024px) {
+    .cadastro {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        padding: 2.5rem 9.37rem;
+    }
+
+    .cadastro_titulo {
+        font-size: 1.5rem;
+        margin-bottom: 19px;
+    }
+
+    .barra_cadastro {
+        width: 300px;
+    }
+
+}
+
+@media screen and (min-width: 1728px) {
+    .cadastro {
+        padding: 4.5rem 9.37rem;
+    }
+}

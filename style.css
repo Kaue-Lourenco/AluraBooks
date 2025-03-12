@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;700&family=Poppins:wght@300;400;500;700&display=swap');
+@import url("styles/header.css");
+@import url("styles/banner.css");
+@import url("styles/carrocel.css");
+@import url("styles/topicos.css");
+@import url("styles/contato.css");
+@import url("styles/footer.css");
+
+* {
+    margin: 0;
+}
+
+:root {
+    --cor-de-fundo: #EBECEE;
+    --cor-texto: #FFFFFF;
+    --cor-amarelo: #EB9B00;
+    --cor-azul: #002F52;
+    --cor-preta: #000000;
+    --cor-cinza: #858585;
+    --cor-conza_escuro: #474646;
+    --azul-degrade: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+
+    --font: "Poppins", serif;
+    --font_titulo: "Josefin Sans", serif;
+}
+
+body {
+    background-color: var(--cor-de-fundo) ;
+    font-size: 1.12rem;
+    color: var(--cor-texto);
+    line-height: auto;
+    box-sizing: border-box;
+    /* width: 26.75rem; */
+    font-family: var(--font);
+    font-weight: 700;
+}
+
+.paragrafo {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.box {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    gap: 1rem;
+    background-color: var(--cor-texto);
+    margin: 1.5rem;
+    border-radius: 10px;
+    padding: 1.43rem 1rem 1.43rem 1rem;
+    line-height: 25px;
+}
+
+.box_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 9px;
+    box-shadow: black;
+}
+
+.box_textos {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.box_texto_1 {
+    color: var(--cor-amarelo);
+    font-size: 1rem;
+}
+
+.box_texto_2 {
+    color: var(--cor-azul);
+    font-size: 1.12rem;
+}
+
+.box_paragrafo {
+    color: var(--cor-azul);
+    font-size: 0.875rem;
+}
+
+.box_icones {
+    display: flex;
+    gap: 2.2rem;
+    margin: 1.5rem 0 0 10px;
+}
+
+.box_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.box_botao {
+    padding: 12px;
+    background-color: var(--cor-amarelo);
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-size: 1rem;
+}
+
+.box_estrelas {
+    width: 5.68rem;
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 2.25rem;
+    }
+
+    .box {
+        margin: 4rem 13.62rem;
+        /* height: 16.62rem; */
+    }
+
+    .box_1 {
+        gap: 0.5rem;
+        /* justify-content: initial; */
+    }
+
+    .box_paragrafo {
+        font-size: 1rem;
+    }
+
+    .box_icones {
+        align-content: end;
+    }
+
+    .box_2 {
+        gap: 1.4rem;
+    }
+
+    footer {
+        padding-top: 55px;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .sessao {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10rem 0;
+    }
+
+    .box {
+        margin: 3rem 10.87rem 0 0;
+        width: 50%;
+        height: 278px;
+    }
+
+    .box_div_1 {
+        display: flex;
+        flex-direction: column;
+        gap: .6rem;
+    }
+
+    .box_texto_1 {
+        font-size: 2.25rem;
+        line-height: 50px;
+    }
+}
